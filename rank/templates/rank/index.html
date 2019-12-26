@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rank</title>
+</head>
+<body>
+    <form action="{% url 'upload_score' %}"  method="post">
+        {% csrf_token %}
+        score:<input type="text" name='score' />
+        client_id:<input type="text" name="client_id" />
+        <input type="submit">
+    </form>
+</body>
+</html>
